@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logo NaturaliNote</title>
+  <style>
+    body {
+      background-color: #fdfaf2;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .logo-box {
+      width: 340px;
+      height: 160px;
+      background: radial-gradient(circle at center, #cfe6db 40%, #a0c1ae 100%);
+      border: 3px solid #3a5f47;
+      border-radius: 24px;
+      box-shadow: 0 0 60px rgba(90, 122, 107, 0.4);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-size: 48px;
+      color: #1a1a1a;
+      font-weight: 700;
+      z-index: 2;
+    }
+
+    .leaf {
+      width: 28px;
+      height: 28px;
+      fill: #2c5e3d;
+      position: absolute;
+    }
+
+    .leaf.left {
+      top: 30px;
+      left: 20px;
+      transform: rotate(-25deg);
+    }
+
+    .leaf.right {
+      top: 30px;
+      right: 20px;
+      transform: rotate(25deg);
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="logo-box">
+    <!-- Foglie -->
+    <svg class="leaf left" viewBox="0 0 24 24">
+      <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z"/>
+    </svg>
+    <svg class="leaf right" viewBox="0 0 24 24">
+      <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z"/>
+    </svg>
+
+    <!-- Testo logo -->
+    <div class="logo-text">NaturaliNote</div>
+  </div>
+
+</body>
+</html>
