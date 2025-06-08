@@ -1,46 +1,158 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Coming Soon - NaturaliNote</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>NaturaliNote</title>
   <style>
     body {
-      background-color: #f6fdf8;
-      font-family: 'Arial', sans-serif;
+      background-color: #9abea7;
+      font-family: Arial, sans-serif;
+      color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
       text-align: center;
-      padding: 80px 20px;
-      color: #1c6f43;
     }
-    h1 {
-      font-size: 36px;
-      color: #1c6f43;
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
     }
+
+    .logo-box {
+      width: 340px;
+      height: 160px;
+      background: radial-gradient(circle at center, #cfe6db 40%, #a0c1ae 100%);
+      border: 3px solid #3a5f47;
+      border-radius: 24px;
+      box-shadow: 0 0 60px rgba(90, 122, 107, 0.4);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-text {
+      font-size: 48px;
+      color: #1a1a1a;
+      font-weight: 700;
+      z-index: 2;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .leaf {
+      width: 28px;
+      height: 28px;
+      fill: #2c5e3d;
+      position: absolute;
+    }
+
+    .leaf.left {
+      top: 30px;
+      left: 20px;
+      transform: rotate(-25deg);
+    }
+
+    .leaf.right {
+      top: 30px;
+      right: 20px;
+      transform: rotate(25deg);
+    }
+
     h2 {
+      font-weight: normal;
       font-size: 20px;
-      color: #2a7ea2;
-      margin-top: 10px;
+      color: #444;
+      margin-top: 0;
     }
-    p {
+
+    .button {
+      margin-top: 25px;
+      background-color: #5a7a6b;
+      color: #fff;
+      padding: 12px 25px;
       font-size: 16px;
-      color: #333;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-    .email {
+
+    .button:hover {
+      background-color: #3d5c4a;
+    }
+
+    .about {
       margin-top: 30px;
-      font-size: 14px;
-      color: #1c6f43;
+      max-width: 600px;
+      font-size: 16px;
+      color: #3d5c4a;
+    }
+
+    .contact {
+      margin-top: 25px;
+      font-size: 15px;
+      color: #3d5c4a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      font-size: 13px;
+      color: #5a7a6b;
+      text-decoration: none;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Naturali<span style="color:#2a7ea2;">Note</span></h1>
-  <h2>Our digital library is coming soon</h2>
-  <p>Smart guides, natural tricks,<br> and everyday solutions for modern living.</p>
 
-  <div class="email">
-    📩 <a href="mailto:info@naturalinote.com" style="color:#1c6f43; text-decoration: none;">
-      info@naturalinote.com
-    </a>
+  <div class="main">
+
+    <!-- Logo -->
+    <div class="logo-box">
+      <svg class="leaf left" viewBox="0 0 24 24">
+        <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z"/>
+      </svg>
+      <div class="logo-text">NaturaliNote</div>
+      <svg class="leaf right" viewBox="0 0 24 24">
+        <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z"/>
+      </svg>
+    </div>
+
+    <!-- Sottotitolo -->
+    <h2>Our digital library is coming soon</h2>
+    <p>Smart guides, natural tricks,<br>and everyday solutions for modern living.</p>
+
+    <!-- About -->
+    <div class="about">
+      <p><strong>About:</strong> NaturaliNote is a digital space dedicated to smart, natural, and everyday solutions. We share creative guides and ideas to simplify life through small, mindful choices.</p>
+    </div>
+
+    <!-- Bottone Store -->
+    <a href="https://your-gumroad-link.com" class="button">📕 View Store</a>
+
+    <!-- Contatto -->
+    <p class="contact">
+      If you have questions, suggestions, or ideas, feel free to write us at
+      <a href="mailto:info@naturalinote.com" style="color:#5a7a6b; text-decoration:none;">info@naturalinote.com</a>
+    </p>
+
   </div>
+
+  <!-- Footer Disclaimer -->
+  <footer>
+    <p><a href="disclaimer.html">Disclaimer</a></p>
+  </footer>
+
 </body>
 </html>
