@@ -1,14 +1,12 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>NaturaliNote</title>
-
-  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="/favicon.ico" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #9abea7;
@@ -19,6 +17,22 @@
       min-height: 100vh;
       margin: 0;
       text-align: center;
+    }
+
+    .nav {
+      background-color: #9abea7;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      border-bottom: 2px solid #9abea7;
+    }
+
+    .nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
     }
 
     .main {
@@ -94,13 +108,6 @@
       background-color: #3d5c4a;
     }
 
-    .about {
-      margin-top: 30px;
-      max-width: 600px;
-      font-size: 16px;
-      color: #3d5c4a;
-    }
-
     .contact {
       margin-top: 25px;
       font-size: 15px;
@@ -118,44 +125,39 @@
       text-decoration: none;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="main">
+  <!-- MENU -->
+  <div class="nav">
+    <a href="https://your-gumroad-link.com">📘 View Store</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="disclaimer.html">📩 Disclaimer</a>
+  </div>
 
-    <!-- Logo -->
+  <div class="main">
+    <!-- LOGO -->
     <div class="logo-box">
       <svg class="leaf left" viewBox="0 0 24 24">
-        <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z"/>
+        <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z" />
       </svg>
       <div class="logo-text">NaturaliNote</div>
       <svg class="leaf right" viewBox="0 0 24 24">
-        <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z"/>
+        <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z" />
       </svg>
     </div>
 
-    <!-- Sottotitolo -->
     <h2>Our digital library is coming soon</h2>
     <p>Smart guides, natural tricks,<br>and everyday solutions for modern living.</p>
 
-    <!-- About -->
-    <div class="about">
-      <p><strong>About:</strong> NaturaliNote is a digital space dedicated to smart, natural, and everyday solutions. We share creative guides and ideas to simplify life through small, mindful choices.</p>
-    </div>
-
-    <!-- Bottone Store -->
     <a href="https://your-gumroad-link.com" class="button">📕 View Store</a>
 
-    <!-- Contatto -->
     <p class="contact">
       If you have questions, suggestions, or ideas, feel free to write us at
       <a href="mailto:info@naturalinote.com" style="color:#5a7a6b; text-decoration:none;">info@naturalinote.com</a>
     </p>
-
   </div>
 
-  <!-- Footer Disclaimer -->
   <footer>
     <p><a href="disclaimer.html">Disclaimer</a></p>
   </footer>
