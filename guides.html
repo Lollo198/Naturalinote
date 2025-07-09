@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart & Simple Living Guides – NaturaliNote</title>
+  <style>
+    body {
+      background-color: #9abea7;
+      font-family: Arial, sans-serif;
+      color: #1a1a1a;
+      margin: 0;
+      text-align: center;
+    }
+
+    .nav {
+      background-color: #9abea7;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      border-bottom: 2px solid #9abea7;
+    }
+    .nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .logo-box {
+      width: 340px;
+      height: 160px;
+      background: radial-gradient(circle at center, #cfe6db 40%, #a0c1ae 100%);
+      border: 3px solid #3a5f47;
+      border-radius: 24px;
+      box-shadow: 0 0 60px rgba(90, 122, 107, 0.4);
+      margin: 20px auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo-box a { display: flex; align-items: center; text-decoration: none; }
+    .logo-text {
+      font-size: 48px;
+      color: #1a1a1a;
+      font-weight: 700;
+      font-family: 'Dancing Script', cursive;
+      z-index: 2;
+    }
+    .leaf {
+      width: 28px;
+      height: 28px;
+      fill: #2c5e3d;
+      position: absolute;
+    }
+    .leaf.left { top: 30px; left: 20px; transform: rotate(-25deg); }
+    .leaf.right { top: 30px; right: 20px; transform: rotate(25deg); }
+
+    .hero {
+      padding: 2rem 1rem;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #1a1a1a;
+    }
+    .hero p {
+      margin: 0.5rem 0 1.5rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .back {
+      text-align: left;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .back a {
+      color: #3d5c4a;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding: 0 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-card {
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      background: #e6f0ea;       /* sfondo verde chiaro per le card */
+      transition: box-shadow .2s;
+    }
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      aspect-ratio: 600 / 420;
+      object-fit: cover;
+      display: block;
+    }
+    .product-card h2 {
+      font-size: 1.1rem;
+      margin: .75rem;
+      color: #1a1a1a;
+    }
+    .product-card p {
+      margin: 0 .75rem 1rem;
+      color: #555;
+    }
+
+    .view-all {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .view-all a {
+      display: inline-block;
+      padding: .75rem 1.5rem;
+      background: #0077cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+  <head>
+  <meta charset="UTF-8" />
+  <title>NaturaliNote</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+ </head>
+
+</head>
+<body>
+
+  <div class="nav">
+    <a href="index.html">🏠 Home</a>
+    <a href="guides.html" class="active">📚 Guides</a>
+    <a href="https://naturinote.gumroad.com" target="_blank" rel="noopener">📘 Store</a>
+  </div>
+
+  <div class="logo-box">
+    <a href="index.html">
+      <svg class="leaf left" viewBox="0 0 24 24">
+        <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z" />
+      </svg>
+      <div class="logo-text">NaturaliNote</div>
+      <svg class="leaf right" viewBox="0 0 24 24">
+        <path d="M12 2C8 4 6 8 6 12c0 4 2 6 6 8 4-2 6-4 6-8s-2-8-6-10z" />
+      </svg>
+    </a>
+  </div>
+
+  <section class="hero">
+    <h1>Smart & Simple Living Guides</h1>
+    <p>Explore our bite-sized e-books on lemons, sugar, coconut oil and more!</p>
+  </section>
+
+  <section class="products-grid">
+    <a class="product-card" href="https://naturinote.gumroad.com/l/free-lemons" target="_blank">
+      <img src="images/lemon-free-600x420.png" alt="Free Lemon Guide">
+      <h2>5 Unexpected Ways to Use Lemons You Didn’t Know</h2>
+      <p>€0+ • Free mini-guide</p>
+    </a>
+
+    <a class="product-card" href="https://naturinote.gumroad.com/l/LemonSolutions" target="_blank">
+      <img src="images/lemon-premium-600x420.png" alt="Secret Lemon Solutions: 10 Uses You Didn’t Know">
+      <h2>Secret Lemon Solutions: 10 Uses You Didn’t Know</h2>
+      <p>€7.99 • Premium guide</p>
+    </a>
+
+    <a class="product-card" href="https://naturinote.gumroad.com/l/SugarSolutions" target="_blank">
+      <img src="images/sugar-premium-600x420.png" alt="Sugar Solutions: 10 Ways to Use Sugar You Didn’t Know">
+      <h2>Sugar Solutions: 10 Ways to Use Sugar You Didn’t Know</h2>
+      <p>€14.99 • Premium guide + bonus tips</p>
+    </a>
+  </section>
+
+  <div class="view-all">
+    <a href="https://naturinote.gumroad.com" target="_blank">View All on Gumroad</a>
+  </div>
+
+  <div class="back">
+    <a href="index.html">← Back to home</a>
+  </div>
+
+</body>
+</html>
